@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Alternos</title>
+    <style>
+        /* Reinicio básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #0d1117; /* Fondo oscuro armonioso */
+            color: #c9d1d9; /* Texto claro para contraste */
+            padding: 20px;
+        }
+
+        header {
+            background-color: #161b22; /* Fondo del encabezado ligeramente más claro */
+            color: #c9d1d9; /* Texto claro */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #58a6ff; /* Enlaces con azul llamativo */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f9826c; /* Color de enlace al pasar el cursor */
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .form-section {
+            background-color: #21262d; /* Fondo del formulario oscuro */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .form-section h2 {
+            color: #c9d1d9; /* Texto claro */
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px 0;
+            background-color: #161b22;
+            color: #c9d1d9;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #f9826c;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 2px solid #21262d; /* Borde armonioso para imágenes */
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figcaption {
+            color: #c9d1d9;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mundos Alternos</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#hipotesis">Hipótesis</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>En estos mundos alternos se exploran historias alternativas y cambios históricos importantes.</p>
+            <figure>
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOz5klcC6tW8RrdLRQvZticme4XAlFl1Z7kzEKlhWfLdyjPnwpOojHJFPrQ0-9cD3iksTVszr_vbf7M8-q5gTFCFBJqomX55L55MYK8y_KONfg=w1366-h639" alt="Mapa del mundo aureliano">
+                <figcaption>Representación de un mundo alterno.</figcaption>
+            </figure>
+        </section>
+
+        <section id="hipotesis">
+            <h2>Hipótesis</h2>
+            <ul>
+                <li>¿Qué pasaría si el Imperio Romano nunca hubiese caído?</li>
+                <li>¿Cómo sería el mundo si los Suevos dominaran el Occidente?</li>
+            </ul>
+            <figure>
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBP4sK6hYQqtFm3BnWQSht-OMpLl5RwZjerWnE171JRJdp_K5TmazuoSGwDksu49hN-O0cn4wj7QMqUqIRa9rOzi8wTF16NMYZaG-ivjBjFvL_4=w1366-h639" alt="Mapa del primer reino suevo">
+                <figcaption>La fuerza del reino germánico suevo.</figcaption>
+            </figure>
+        </section>
+
+        <section id="formulario" class="form-section">
+            <h2>Formulario Interactivo</h2>
+            <form onsubmit="event.preventDefault();">
+                <fieldset>
+                    <legend>¿Qué prefieres?</legend>
+                    <label><input type="radio" name="mundo" value="romano" checked> Mundo Romano Imperial</label><br>
+                    <label><input type="radio" name="mundo" value="suevo"> Mundo Suevo Germánico</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Cuestionario histórico</legend>
+                    <label>¿Cuándo cayó el Imperio Romano?</label><br>
+                    <input type="radio" name="imperio_caida" value="476" checked> 476 d.C.<br>
+                    <input type="radio" name="imperio_caida" value="410"> 410 d.C.<br>
+                    <input type="radio" name="imperio_caida" value="395"> 395 d.C.<br>
+                    
+                    <label>¿Cómo se llamaron los ejércitos romanos?</label><br>
+                    <input type="radio" name="ejercito_romano" value="legiones" checked> Legiones<br>
+                    <input type="radio" name="ejercito_romano" value="centurias"> Centurias<br>
+                    <input type="radio" name="ejercito_romano" value="gladiadores"> Gladiadores<br>
+                    
+                    <label>¿En qué año se dio la conquista romana de Persia?</label><br>
+                    <input type="radio" name="persia_conquista" value="226" checked> 226 d.C.<br>
+                    <input type="radio" name="persia_conquista" value="117"> 117 d.C.<br>
+                    <input type="radio" name="persia_conquista" value="193"> 193 d.C.<br>
+                    
+                    <label>¿Cuándo los germánicos invadieron Roma?</label><br>
+                    <input type="radio" name="invacion_germanica" value="455" checked> 455 d.C.<br>
+                    <input type="radio" name="invacion_germanica" value="476"> 476 d.C.<br>
+                    <input type="radio" name="invacion_germanica" value="410"> 410 d.C.<br>
+                    
+                    <label>¿Qué pueblo germánico fue clave?</label><br>
+                    <input type="radio" name="pueblo_germanico" value="suevos" checked> Suevos<br>
+                    <input type="radio" name="pueblo_germanico" value="visigodos"> Visigodos<br>
+                    <input type="radio" name="pueblo_germanico" value="ostrogodos"> Ostrogodos<br>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> 2025 Mundos Alternos. Agustin Ayvar</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Alternos</title>
+    <style>
+        /* Reinicio básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #0d1117; /* Fondo oscuro armonioso */
+            color: #c9d1d9; /* Texto claro para contraste */
+            padding: 20px;
+        }
+
+        header {
+            background-color: #161b22; /* Fondo del encabezado ligeramente más claro */
+            color: #c9d1d9; /* Texto claro */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #58a6ff; /* Enlaces con azul llamativo */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f9826c; /* Color de enlace al pasar el cursor */
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .form-section {
+            background-color: #21262d; /* Fondo del formulario oscuro */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .form-section h2 {
+            color: #c9d1d9; /* Texto claro */
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px 0;
+            background-color: #161b22;
+            color: #c9d1d9;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #f9826c;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 2px solid #21262d; /* Borde armonioso para imágenes */
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figcaption {
+            color: #c9d1d9;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mundos Alternos</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#hipotesis">Hipótesis</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>En estos mundos alternos se exploran historias alternativas y cambios históricos importantes.</p>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Un gato relajado">
+                <figcaption>Un ejemplo de historia alternativa.</figcaption>
+            </figure>
+        </section>
+
+        <section id="hipotesis">
+            <h2>Hipótesis</h2>
+            <ul>
+                <li>¿Qué pasaría si el Imperio Romano nunca hubiese caído?</li>
+                <li>¿Cómo sería el mundo si los Suevos dominaran el Occidente?</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Un plato de lasaña">
+                <figcaption>¿Y si los Suevos hubieran inventado la lasaña?</figcaption>
+            </figure>
+        </section>
+
+        <section id="formulario" class="form-section">
+            <h2>Formulario Interactivo</h2>
+            <form action="https://ejemplo.com/submit">
+                <fieldset>
+                    <legend>¿Qué tipo de mundo alterno prefieres?</legend>
+                    <label><input type="radio" name="mundo" value="imperial" checked> Imperial</label>
+                    <label><input type="radio" name="mundo" value="germano"> Germánico</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona las características del mundo:</legend>
+                    <label><input type="checkbox" name="caracteristica" value="tecnologia"> Tecnología avanzada</label>
+                    <label><input type="checkbox" name="caracteristica" value="magia"> Magia presente</label>
+                </fieldset>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mundos Alternos. <a href="https://ejemplo.com">Política de privacidad</a>.</p>
+    </footer>
+</body>
+</html>
