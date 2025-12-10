@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <link rel="icon" type="image.jpg" href="Imagenes/icono.png"/> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+     <img src="Imagenes/icono.png" alt="icono">
+        <nav>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Inscripcion.html">Inscripcion</a></li>
+            <li><a href="contacto.html">Nuestro contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+     <section class="ins">
+        <h2>Inscripción</h2>
+         <form action="mensaje.html" method="post">
+         <ul>   
+         <li>
+         <label for="name">Nombre completo:</label>
+         <input type="text" id="nombre" name="Nombre" required />
+         </li> 
+
+         <li>
+         <label for="genero">Indique su Género: </label>
+         <select name="genero" id="genero" required>
+         <option value="masculino">Masculino</option>
+         <option value="femenino">Femenino</option>
+         <option value="otro">Otro</option>
+         </select>
+         </li>
+
+         <li>
+         <label for="edad">Edad:</label>
+         <input type="text" id="edad" name="Edad" required>
+         </li>
+         
+         <li>
+         <label for="localidad">Localidad:</label>
+         <input type="text" id="barrio" name="ciudad" required>
+         </li>
+
+         <li>
+         <label for="sede">Selecciona una Sede: </label>
+         <select name="Selecciona" id="Selecciona" required>
+         <option value="barracas">Barracas 578</option>
+         <option value="tigre">Tigre 1244</option>
+         <option value="amaru">Tupac amaru 1781</option>
+         </select>
+         </li>
+
+         <li>
+         <label for="actividades">Selecciona las actividades:</label><br>
+         <input type="radio" name="gym" id="gimnasio"> Gimnasio <br>
+         <input type="radio" name="Pilates" id="Pilates"> Pilates <br>
+         <input type="radio" name="Yoga" id="yoga"> Yoga <br>
+         <input type="radio" name="boxeo" id="boxeo"> Boxeo <br>
+         </li>
+         <li>
+          <label for="aptoFisico">Apto Físico:</label>
+          <input type="file" id="aptoFisico" name="aptoFisico" accept=".pdf,.jpg,.jpeg,.png">
+        </li>
+        </ul>
+    <div class="boton">
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    </div>
+</form>
+          
+     </section>
+    </main>
+    <footer>2025 Gimnasio WH40K. Copyright</footer>
+</body>
+</html>
