@@ -1,0 +1,34 @@
+body {background-color: hwb(0 0% 100%);}
+h1   {color: #ff0000;}
+h2   {color: #ff0000;}
+p    {color: #ff5100;}
+u    {color: lab(96.1% -19.65 93.73);}
+ul   {color: aqua;}
+h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+img
+{
+    width: 350px;
+    height: 350px;
+    display:block;
+    margin:auto;
+}
+title {color: aqua;}
+div {
+  width: 375px;
+  height: 375px;
+  border: 10px solid red;
+  padding: 40px;
+  margin: 20px auto 0; /* Margen automático horizontal y superior fijo */
+  background-color: #000000;
+  position: relative; /* Posicionamiento normal */
+  top: 100%; /* Empujamos el div hacia abajo del contenido */
+  transform: translateY(-100%); /* Ajustamos su posición para centrarlo al final */
+}

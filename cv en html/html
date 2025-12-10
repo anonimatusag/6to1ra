@@ -1,0 +1,41 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <u>
+     <h1>𝓒𝓾𝓻𝓻𝓲́𝓬𝓾𝓵𝓾𝓶 𝓥𝓲𝓽𝓪𝓮</h1>
+    </u>
+     <ul>   
+    <img style="border: 1px solid; color: black;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_k_-UY23PQjnxo_LEk6TGAqSf_O69O5ll2A&s" alt="imagen de ipp" width="300" height="300" >
+    <u>
+    <h2>𝔻𝕒𝕥𝕠𝕤 ℙ𝕖𝕣𝕤𝕠𝕟𝕒𝕝𝕖𝕤</h2>
+    </u> 
+           <p>Nombre y Apellido: Agustin Matias Ayvar Gamboa</p>
+           <p>Género: Masculino</p>
+           <p>Domicilio: AV gral paz 50</p>
+           <p>Fecha de Nacimiento: 28-02-2008</p>
+           <p>Nacionalidad: Argentino</p>
+           <p>E-Mail: ayvaragustin@gmail.com </p>
+           <p>Estado civil: Soltero</p>
+        </ul>
+        <hr>
+        <ul>
+        <u>
+         <h2>𝔽𝕠𝕣𝕞𝕒𝕔𝕚𝕠́𝕟</h2> 
+        </u> 
+          <p>Tecnico en informatica profesional y personal en 6to año</p>  
+        </ul>
+        <hr>
+        <ul>
+        <u>
+        <h2>𝔼𝕩𝕡𝕖𝕣𝕚𝕖𝕟𝕔𝕚𝕒</h2>
+        </u>
+           <p>Experiencia en software y mantenimiento del hardware</p>
+        </ul>
+        <ul>
+        <p>𝓜𝓲𝓼 𝓻𝓮𝓭𝓮𝓼 𝓼𝓸𝓬𝓲𝓪𝓵𝓮𝓼 𝓼𝓸𝓷:
+            <a href="https://ar.linkedin.com/">mi red social</a>
+        </p>
+        </ul>
+    </body>
+</html>
