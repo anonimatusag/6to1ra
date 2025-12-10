@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al Gimnasio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inscripción a FitLife</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Formulario de Inscripción</h2>
+        <img src="images/gym_form.jpg" alt="Persona completando un formulario en un gimnasio" class="gym-image">
+        
+        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+            <label for="nombreApellido">Nombre y Apellido:</label>
+            <input type="text" id="nombreApellido" name="nombreApellido" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="15" max="99" required>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+
+            <label for="sede">Sede a donde se inscribe:</label>
+            <select id="sede" name="sede" required>
+                <option value="">Selecciona una sede</option>
+                <option value="centro">Sede Centro</option>
+                <option value="norte">Sede Norte</option>
+                <option value="sur">Sede Sur</option>
+            </select>
+
+            <label>Actividades que realizará:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="musculacion" name="actividad" value="musculacion">
+                <label for="musculacion">Musculación</label><br>
+                
+                <input type="checkbox" id="spinning" name="actividad" value="spinning">
+                <label for="spinning">Spinning</label><br>
+                
+                <input type="checkbox" id="yoga" name="actividad" value="yoga">
+                <label for="yoga">Yoga/Pilates</label><br>
+                
+                <input type="checkbox" id="funcional" name="actividad" value="funcional">
+                <label for="funcional">Funcional</label><br>
+                
+                <input type="checkbox" id="zumba" name="actividad" value="zumba">
+                <label for="zumba">Zumba</label><br>
+            </div>
+
+            <label for="aptoFisico">Apto Físico (subir archivo PDF/JPG):</label>
+            <input type="file" id="aptoFisico" name="aptoFisico" accept=".pdf,.jpg,.jpeg,.png">
+
+            <div class="form-buttons">
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

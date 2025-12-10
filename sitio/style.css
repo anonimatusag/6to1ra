@@ -1,0 +1,142 @@
+/* style.css */
+
+/* Basic Resets */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #555;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #aaffa0; /* Lighter green on hover */
+}
+
+/* Main Content Area */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.gym-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures it takes up full width available */
+    margin-bottom: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form input[type="file"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    font-weight: normal; /* Checkbox labels don't need to be bold */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto; /* Checkboxes are small */
+    margin-right: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #28a745; /* Green for submit */
+    color: white;
+}
+
+.form-buttons button[type="reset"] {
+    background-color: #dc3545; /* Red for reset */
+    color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Space above footer */
+}
