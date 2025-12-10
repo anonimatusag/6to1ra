@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - Ejercicios de Selectores y Pseudo-selectores</title>
+    <style>
+        /* 1. Cinco maneras de seleccionar #especial y aplicar diferentes colores de fondo */
+        #especial { background-color: lightblue; }
+        div#especial { background-color: lightgreen; }
+        section > #especial { background-color: lightcoral; }
+        #especial:hover { background-color: yellow; }
+        #especial::before { content: "★ "; color: red; }
+
+        /* 2. Elementos pares de la lista con .lista-items */
+        .lista-items li:nth-child(even) { background-color: #f0f0f0; }
+
+        /* 3. Pseudo-clases y pseudo-elementos */
+        p::first-letter { font-size: 2em; font-weight: bold; }
+        p::selection { background-color: lightgray; color: black; }
+        button:hover { background-color: orange; }
+        input:focus { border: 2px solid red; }
+
+        /* 5. Cambiar color de texto de .destacado */
+        .destacado { color: darkblue; }
+
+        /* 6. Primer párrafo de cada sección en negrita */
+        section p:first-of-type { font-weight: bold; }
+
+        /* 7. Divs hijos directos con borde */
+        div > div { border: 2px solid black; }
+
+        /* 8. Último elemento de una lista ordenada */
+        .lista-ordenada li:last-child { font-size: 20px; }
+
+        /* 9. Enlaces sin target="_blank" subrayados */
+        a:not([target="_blank"]) { text-decoration: underline; }
+
+        /* 10. Párrafos dentro de un article con interlineado */
+        article p { line-height: 1.8; }
+
+        /* 11. h2 con span cambia de color */
+        h2 span { color: purple; }
+
+        /* 12. Imágenes con alt definido con borde */
+        img[alt] { border: 3px solid gray; }
+
+        /* 13. Tercer elemento de una lista desordenada en cursiva */
+        .lista-desordenada li:nth-child(3) { font-style: italic; }
+
+        /* 14. Filas impares de una tabla con fondo */
+        tr:nth-child(odd) { background-color: #ddd; }
+
+        /* 15. Div con al menos dos clases con sombra */
+        div[class*=" "] { box-shadow: 4px 4px 10px rgba(0,0,0,0.3); }
+
+        /* 16. Botón al pasar el cursor */
+        button:hover { background-color: orange; }
+
+        /* 17. Inputs de tipo text dentro de un form con borde */
+        form input[type="text"] { border: 2px solid blue; }
+
+        /* 18. Párrafo inmediatamente después de un h3 */
+        h3 + p { color: darkred; }
+
+        /* 19. Enlaces visitados más opacos */
+        a:visited { opacity: 0.7; }
+
+        /* 20. strong dentro de un p con color */
+        p strong { color: green; }
+
+        /* 21. Inputs deshabilitados en gris */
+        input:disabled { background-color: gray; }
+
+        /* 22. li dentro de un nav con espaciado */
+        nav li { padding: 10px; }
+
+        /* 23. Elementos con 'importante' en su clase en negrita */
+        [class*="importante"] { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TP4: Ejercicios de Selectores y Pseudo-selectores</h1>
+</header>
+
+<section id="ejercicio1">
+    <h2>Ejercicio 1: Elemento con id <code>#especial</code></h2>
+    <div class="contenedor">
+        <div id="especial">Elemento Especial</div>
+    </div>
+</section>
+
+<section id="ejercicio2">
+    <h2>Ejercicio 2: Lista con clase <code>.lista-items</code></h2>
+    <ul class="lista-items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+</section>
+
+<section id="ejercicio3">
+    <h2>Ejercicio 3: Pseudo-clases y Pseudo-elementos</h2>
+    <p>Observa la primera letra de este párrafo para ver el efecto <code>::first-letter</code>.</p>
+    <button>Hover sobre mí</button>
+    <form>
+        <input type="text" placeholder="Enfócate en este input">
+        <input type="checkbox" checked> Checkbox
+    </form>
+    <p>Selecciona parte de este texto para ver el efecto <code>::selection</code>.</p>
+    <a href="https://www.ejemplo.com">Enlace de prueba</a>
+</section>
+
+<section id="ejercicio4">
+    <h2>Ejercicio 4: Pseudo-selectores adicionales</h2>
+    <button>Otro botón</button>
+    <form>
+        <input type="text" placeholder="Otro input">
+    </form>
+</section>
+
+<section id="ejercicio5">
+    <h2>Ejercicio 5: Elementos con clase <code>.destacado</code></h2>
+    <p class="destacado">Este párrafo es destacado.</p>
+</section>
+
+<section id="ejercicio6">
+    <h2>Ejercicio 6: Primer párrafo de la sección</h2>
+    <article>
+        <p>Este es el primer párrafo, que debería aparecer en negrita.</p>
+        <p>Este es el segundo párrafo.</p>
+    </article>
+</section>
+
+<section id="ejercicio7">
+    <h2>Ejercicio 7: Divs hijos directos</h2>
+    <div class="padre">
+        <div>Hijo 1</div>
+        <div>Hijo 2</div>
+        <div>Hijo 3</div>
+    </div>
+</section>
+
+<section id="ejercicio8">
+    <h2>Ejercicio 8: Último elemento de una lista ordenada</h2>
+    <ol class="lista-ordenada">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+</section>
+
+<section id="ejercicio9">
+    <h2>Ejercicio 9: Enlaces sin target="_blank"</h2>
+    <a href="https://www.google.com">Google (sin target)</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook (con target)</a>
+</section>
+
+<!-- Continúan más secciones con las respectivas reglas -->
+
+</body>
+</html>

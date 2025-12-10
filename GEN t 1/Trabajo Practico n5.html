@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Display y Google Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ejercicio 3: Propiedad Display */
+        
+        /* Elemento inline: ocupa solo el espacio necesario */
+        .inline {
+            display: inline;
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+        /* Elemento block: ocupa toda la línea disponible */
+        .block {
+            display: block;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Elemento inline-block: se comporta como inline pero permite tamaño */
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        /* Elemento con display: none al pasar el cursor */
+        .hidden {
+            display: block;
+            background-color: yellow;
+            padding: 10px;
+        }
+        .hidden:hover {
+            display: none;
+        }
+
+        /* Ejercicio 4: Integración de Google Fonts */
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicios de Display y Google Fonts</h1>
+    </header>
+
+    <section id="ejercicio3">
+        <h2>Ejercicio 3: Propiedad Display</h2>
+        <p class="inline">Elemento Inline</p>
+        <p class="block">Elemento Block</p>
+        <p class="inline-block">Elemento Inline-Block</p>
+        <p class="hidden">Este texto desaparecerá al pasar el cursor sobre él</p>
+    </section>
+
+    <section id="ejercicio4">
+        <h2>Ejercicio 4: Integración de Google Fonts</h2>
+        <p>Este texto usa la fuente Roboto de Google Fonts.</p>
+    </section>
+
+</body>
+</html>
