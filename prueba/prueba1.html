@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Futurista</title>
+    <style>
+        @keyframes glitch {
+            0% { transform: translate(0); opacity: 1; filter: blur(0px); }
+            20% { transform: translate(-3px, 3px); opacity: 0.8; filter: blur(1px); }
+            40% { transform: translate(3px, -3px); opacity: 0.6; filter: blur(2px); }
+            60% { transform: translate(-5px, 5px); opacity: 0.4; filter: blur(3px); }
+            80% { transform: translate(5px, -5px); opacity: 0.2; filter: blur(4px); }
+            100% { transform: translate(0); opacity: 0; filter: blur(5px); }
+        }
+
+        @keyframes aparecer {
+            0% { opacity: 0; transform: scale(0.8); filter: blur(5px); }
+            100% { opacity: 1; transform: scale(1); filter: blur(0px); }
+        }
+
+        .titulo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ff; /* Color futurista */
+            text-align: center;
+            margin-top: 50px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .desaparece {
+            animation: glitch 1.5s forwards;
+        }
+
+        .aparece {
+            animation: aparecer 1.5s forwards;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #00ff99;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #009966;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="titulo" class="aparece">¡Efecto Futurista!</div>
+    <button onclick="toggleEfecto()">Activar Efecto</button>
+
+    <script>
+        function toggleEfecto() {
+            let titulo = document.getElementById("titulo");
+            titulo.classList.toggle("desaparece");
+
+            setTimeout(() => {
+                titulo.classList.toggle("desaparece");
+                titulo.classList.toggle("aparece");
+            }, 1500); // Reaparece después de 1.5 segundos
+        }
+    </script>
+
+</body>
+</html>
