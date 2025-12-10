@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sumar con Prompt</title>
+</head>
+<body>
+  <h1>Resultado de la suma</h1>
+
+  <p id="resultado"></p> <!-- Aquí se mostrará la suma -->
+
+  <script>
+    function sumar(a, b) {
+      let resultado = a + b;
+      console.log("La suma es: " + resultado);
+      document.getElementById("resultado").textContent = "La suma es: " + resultado;
+    }
+
+    // Pedir números al usuario
+    let num1 = parseFloat(prompt("Ingresa el primer número:"));
+    let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+    // Llamar a la función
+    sumar(num1, num2);
+  </script>
+</body>
+</html>
