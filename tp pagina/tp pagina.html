@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Alternos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mundos Alternos</h1>
+        <nav>
+            <ul>
+                <li><a href="#index.html">Inicio</a>
+                <li><a href="#hipotesis">Hipótesis</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#Resumen">Resumen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Introducción</h2>
+            <p>En estos mundos alternos se exploran historias alternativas y cambios históricos importantes.</p>
+            <figure>
+                <img src="imagenes/roma.png" alt="Mapa del mundo aureliano">
+                <figcaption>Representación de un mundo alterno.</figcaption>
+            </figure>
+        </section>
+
+        <section id="hipotesis">
+            <h2>Hipótesis</h2>
+            <ul>
+                <li>¿Qué pasaría si el Imperio Romano nunca hubiese caído?</li>
+                <li>¿Cómo sería el mundo si los Suevos dominaran el Occidente?</li>
+            </ul>
+            <figure>
+                <img src="imagenes/germania.png" alt="Mapa del primer reino suevo">
+                <figcaption>La fuerza del reino germánico suevo.</figcaption>
+            </figure>
+        </section>
+
+        <section id="formulario" class="form-section">
+            <h2>Formulario Interactivo</h2>
+            <form onsubmit="event.preventDefault();">
+                <fieldset>
+                    <legend>¿Qué prefieres?</legend>
+                    <label><input type="radio" name="mundo" value="romano" checked> Mundo Romano Imperial</label><br>
+                    <label><input type="radio" name="mundo" value="suevo"> Mundo Suevo Germánico</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Cuestionario histórico</legend>
+                    <label>¿Cuándo cayó el Imperio Romano?</label><br>
+                    <input type="radio" name="imperio_caida" value="476" checked> 476 d.C.<br>
+                    <input type="radio" name="imperio_caida" value="410"> 410 d.C.<br>
+                    <input type="radio" name="imperio_caida" value="395"> 395 d.C.<br>
+                    
+                    <label>¿Cómo se llamaron los ejércitos romanos?</label><br>
+                    <input type="radio" name="ejercito_romano" value="legiones" checked> Legiones<br>
+                    <input type="radio" name="ejercito_romano" value="centurias"> Centurias<br>
+                    <input type="radio" name="ejercito_romano" value="gladiadores"> Gladiadores<br>
+                    
+                    <label>¿En qué año se dio la conquista romana de Persia?</label><br>
+                    <input type="radio" name="persia_conquista" value="226" checked> 226 d.C.<br>
+                    <input type="radio" name="persia_conquista" value="117"> 117 d.C.<br>
+                    <input type="radio" name="persia_conquista" value="193"> 193 d.C.<br>
+                    
+                    <label>¿Cuándo los germánicos invadieron Roma?</label><br>
+                    <input type="radio" name="invacion_germanica" value="455" checked> 455 d.C.<br>
+                    <input type="radio" name="invacion_germanica" value="476"> 476 d.C.<br>
+                    <input type="radio" name="invacion_germanica" value="410"> 410 d.C.<br>
+                    
+                    <label>¿Qué pueblo germánico fue clave?</label><br>
+                    <input type="radio" name="pueblo_germanico" value="suevos" checked> Suevos<br>
+                    <input type="radio" name="pueblo_germanico" value="visigodos"> Visigodos<br>
+                    <input type="radio" name="pueblo_germanico" value="ostrogodos"> Ostrogodos<br>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section> 
+        <section id="Resumen">
+        <div class="bizancio">
+             <img src="imagenes/caida.jpg" alt="disolucion">
+        </div>
+        <div class="Resumen">
+            <h1> Resumen </h1>
+            <p>La caída del Imperio Romano de Occidente fue un proceso gradual, no un evento único, que culminó en el año 476 con la destitución de Rómulo Augústulo por Odoacro. Este hecho marcó el fin de la Edad Antigua y el inicio de la Edad Media. 
+               La caída fue influenciada por factores internos como la crisis económica, social y política, así como por presiones externas de los pueblos bárbaros que invadieron el territorio romano. 
+               La caída del Imperio Romano de Oriente, o Imperio Bizantino, se produjo con la conquista de Constantinopla por el Imperio Otomano en 1453. 
+               Después de siglos de declive y diversos desafíos, Constantinopla, la capital bizantina, fue sitiada por los otomanos y finalmente cayó el 29 de mayo de 1453, marcando el fin del Imperio. </p>   
+        </div>
+       </section>
+    </main>
+    <footer>
+        <p> 2025 Mundos Alternos. Agustin Ayvar</p>
+    </footer>
+</body>
+</html>
