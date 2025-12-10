@@ -1,0 +1,128 @@
+  
+
+/* Estilo general */
+body {
+    font-family: 'Arial Black' , Tahoma;
+    font-size: 16px;
+    background-color: #a0632ad5;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/fondo.jpg); /* Reemplaza con tu ruta */
+    background-repeat: no-repeat;  /* Para no repetir la imagen */
+    background-size: cover;       /* Para que la imagen cubra todo el área */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-size: 35px;
+    background-color: #000000;
+    color: #ff0000;
+    background-image: url(imagenes/menu); /* Reemplaza con tu ruta */
+    background-repeat: no-repeat;  /* Para no repetir la imagen */
+    background-size: cover;       /* Para que la imagen cubra todo el área */
+}
+
+/* Menú de navegación */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 30px;
+    color: #b94b2a;
+    text-decoration: none;
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+/* Contenedor principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #000000;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Secciones */
+section {
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    border-left: 5px solid #f0f0f0;
+    opacity: 0;
+}
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: #313244;
+    color: white;
+    background-image: url(imagenes/footer\ 2.jpg); /* Reemplaza con tu ruta */
+    background-repeat: no-repeat;  /* Para no repetir la imagen */
+    background-size: cover;       /* Para que la imagen cubra todo el área */
+}
+figure {
+    text-align: center;
+  }
+
+  figure img {
+    width: 300px; /* imagen más grande que antes */
+    border: 2px solid hsl(0, 100%, 50%); /* borde gris claro y fino */
+    padding: 8px; /* espacio interior moderado */
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+  div img {
+    display: block;
+    margin: 0 auto;         /* centra la imagen */
+    width: 300px;           /* tamaño mediano */
+    border: 2px solid #ff0303; /* borde gris claro y fino */
+    padding: 8px;           /* espacio interior moderado */
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+  div p {
+    text-align: center;     /* centra el texto dentro del div */
+  }
+  div figcaption
+  {
+    text-align: center;
+  }
+h1{
+    color: #b94b2a;
+    border: 4px solid #ff0000;        /* Borde de 2 píxeles color gris oscuro */
+    border-radius: 10px;           /* Esquinas medio curvadas */
+    padding: 10px 20px;            /* Espacio interno alrededor del texto */
+    display: inline-block;         /* Para que el tamaño se ajuste al contenido */
+    background-color: #000000;
+}
